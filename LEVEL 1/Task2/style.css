@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
+
+body {
+  background-color: #3d4658;
+}
+
+#myButton {
+  border-radius: 2.5rem;
+  position: absolute;
+  width: 20rem;
+  height: 10rem;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 35.5%;
+  transform: translateY(-50%);
+  /* border: 2px solid; */
+}
+h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  color: #0ef;
+}
+.display {
+  display: flex;
+  flex-direction: column;
+}
+#num1,
+#num2,
+#button,
+#result {
+  align-items: center;
+  justify-content: center;
+  /* display: flex; */
+  width: auto;
+  height: 2.5rem;
+  font-size: 1rem;
+}

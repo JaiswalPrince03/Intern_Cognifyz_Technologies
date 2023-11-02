@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="Images/gallery.jpeg" class="main-image" alt="Main Image" />
+      <div class="thumbnails">
+        <img src="Images/i1.jpg" class="thumbnail" alt="Thumbnail 1" />
+        <img src="Images/i2.jpg" class="thumbnail" alt="Thumbnail 2" />
+        <img src="Images/i3.jpg" class="thumbnail" alt="Thumbnail 3" />
+        <img src="Images/i4.jpg" class="thumbnail" alt="Thumbnail 4" />
+        <img src="Images/i5.jpg" class="thumbnail" alt="Thumbnail 5" />
+        <img src="Images/i6.jpg" class="thumbnail" alt="Thumbnail 6" />
+        <img src="Images/i7.jpg" class="thumbnail" alt="Thumbnail 7" />
+        <img src="Images/i8.jpg" class="thumbnail" alt="Thumbnail 8" />
+        <img src="Images/i9.jpg" class="thumbnail" alt="Thumbnail 9" />
+        <img src="Images/i10.jpg" class="thumbnail" alt="Thumbnail 10" />
+      </div>
+    </div>
+    <script>
+      const thumbnails = document.querySelectorAll(".thumbnail");
+      const mainImage = document.querySelector(".main-image");
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", function () {
+          mainImage.src = this.src;
+        });
+      });
+    </script>
+    <div class="slideshow">
+      <img src="Images/i1.jpg" class="slide" alt="Slide 1" />
+      <img src="Images/i2.jpg" class="slide" alt="Slide 2" />
+      <img src="Images/i3.jpg" class="slide" alt="Slide 3" />
+      <img src="Images/i4.jpg" class="slide" alt="Slide 4" />
+      <img src="Images/i5.jpg" class="slide" alt="Slide 5" />
+    </div>
+    
+  </body>
+</html>
